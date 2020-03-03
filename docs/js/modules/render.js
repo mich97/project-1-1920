@@ -16,7 +16,6 @@ const renderOverview = (data) => {
         bookContainer.appendChild(bookTitle)
         resultsOverview.appendChild(bookContainer)
     })
-
 }
 
 const renderDetail = (data) => {
@@ -27,12 +26,14 @@ const renderDetail = (data) => {
 
 
     detail = {
-        path: data.coverimages[1]
+        path: data.coverimages[1],
+        'detail-title': data.titles[0],
+        'detail-description': data.summaries[0]
     }
 
     directives = {
         'detail-thumbnail': {
-            src: function() {
+            src: function () {
                 return this.path
             }
         }
