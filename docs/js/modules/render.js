@@ -1,7 +1,9 @@
 const renderOverview = (data) => {
     console.log(data)
-    const resultsOverview = document.getElementById('results-overview')
-    resultsOverview.innerHTML = ''
+    const categories = document.getElementById('categories')
+    const slideWrapper = document.getElementById('slides')
+    const slideContainer = document.getElementById('slide-container')
+    categories.classList.add('hidden')
 
     data.forEach(book => {
         const bookContainer = document.createElement('a')
@@ -9,13 +11,17 @@ const renderOverview = (data) => {
         const bookTitle = document.createElement('p')
 
         bookContainer.setAttribute('href', `#${book.id}`)
+        bookContainer.setAttribute('class', 'slide')
         bookImage.setAttribute('src', book.coverimages[1])
         bookTitle.innerText = book.titles[0];
 
+
         bookContainer.appendChild(bookImage)
         bookContainer.appendChild(bookTitle)
-        resultsOverview.appendChild(bookContainer)
+        slideContainer.appendChild(bookContainer)
     })
+
+    slideWrapper.classList.remove('hidden')
 }
 
 const renderDetail = (data) => {
