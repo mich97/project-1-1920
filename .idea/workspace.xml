@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4520a035-84e6-4a6c-a3e2-3e0eb7d60e36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/img/CH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/CZ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/EG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/FR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/IN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/IT.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/JP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/SP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/TL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/TR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/UK.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/USA.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/placeholder.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/modules/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/js/modules/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/js/modules/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/js/modules/render.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/js/modules/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/js/modules/router.js" afterDir="false" />
     </list>

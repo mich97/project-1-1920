@@ -67,56 +67,25 @@
         </a>
     </section>
 
-    <div id="slides" class="hidden">
-        <input checked type="radio" name="slider" id="slide1" class="set" />
-        <input type="radio" name="slider" id="slide2" class="set" />
-        <input type="radio" name="slider" id="slide3" class="set" />
-        <input type="radio" name="slider" id="slide4" class="set" />
-        <input type="radio" name="slider" id="slide5" class="set" />
-        <input type="radio" name="slider" id="slide6" class="set" />
-        <input type="radio" name="slider" id="slide7" class="set" />
-        <input type="radio" name="slider" id="slide8" class="set" />
-        <input type="radio" name="slider" id="slide9" class="set" />
-        <input type="radio" name="slider" id="slide10" class="set" />
-        <input type="radio" name="slider" id="slide11" class="set" />
-        <input type="radio" name="slider" id="slide12" class="set" />
-        <input type="radio" name="slider" id="slide13" class="set" />
-        <input type="radio" name="slider" id="slide14" class="set" />
-        <input type="radio" name="slider" id="slide15" class="set" />
-        <input type="radio" name="slider" id="slide16" class="set" />
-        <input type="radio" name="slider" id="slide17" class="set" />
-        <input type="radio" name="slider" id="slide18" class="set" />
-        <input type="radio" name="slider" id="slide19" class="set" />
-        <input type="radio" name="slider" id="slide20" class="set" />
 
-        <div class="mask">
-            <div class="overflow" id="slide-container">
+    <div id="slider" class="hidden">
+        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide5" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide6" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide7" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide8" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide9" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide10" class="slider__nav"/>
+        <div id="slider__inner">
 
-            </div>
         </div>
+    </div>
 
-        <div id="controls">
-            <label for="slide1">Back</label>
-            <label for="slide2">Next</label>
-            <label for="slide3"></label>
-            <label for="slide4"></label>
-            <label for="slide5"></label>
-            <label for="slide6"></label>
-            <label for="slide7"></label>
-            <label for="slide8"></label>
-            <label for="slide9"></label>
-            <label for="slide10"></label>
-            <label for="slide11"></label>
-            <label for="slide12"></label>
-            <label for="slide13"></label>
-            <label for="slide14"></label>
-            <label for="slide15"></label>
-            <label for="slide16"></label>
-            <label for="slide17"></label>
-            <label for="slide18"></label>
-            <label for="slide19"></label>
-            <label for="slide20"></label>
-        </div>
+    <div id="button-container">
+        <a href="#sliderback" id="slider-back" class="hidden">Go back</a>
     </div>
 
 
@@ -125,9 +94,17 @@
 
     <section id="detail-container" class="hidden">
         <img id="detail-thumbnail" alt="Detail Thumbnail">
-        <h2 id="detail-title"></h2>
-        <p id="detail-description"></p>
+        <div id="detail-text">
+            <h2 id="detail-title"></h2>
+            <p id="detail-publisher">Publisher:</p>
+            <p id="detail-description">Description:</p>
+            <a id="detail-link" target="_blank">Open OBA detailpage</a>
+        </div>
+        <div id="detail-button-container">
+            <a id="detail-back" href="#detailback">Go back</a>
+        </div>
     </section>
+
 </main>
 
 <script src="js/vendor/routie.min.js"></script>

@@ -12,7 +12,7 @@ const config = {
 }
 
 const getOverviewData = (categorie) => {
-    fetch(`${cors}${endpointSearch}${categorie}&authorization=${key}&detaillevel=${detail}&output=json`, config)
+    fetch(`${cors}${endpointSearch}${categorie}&authorization=${key}&detaillevel=${detail}&output=json&pagesize=10`, config)
         .then(response => {
             return response.json()
         })
