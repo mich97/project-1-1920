@@ -1,9 +1,10 @@
 const renderOverview = (data) => {
     console.log(data)
-    const categories = document.getElementById('categories')
+
     const slider = document.getElementById('slider')
     const sliderInner = document.getElementById('slider__inner')
     const back = document.getElementById('slider-back')
+    const loading = document.getElementById('loading-state')
 
 
     data.forEach(book => {
@@ -26,17 +27,21 @@ const renderOverview = (data) => {
         sliderInner.appendChild(sliderContents)
     })
 
-    categories.classList.add('hidden')
+
     slider.classList.remove('hidden')
     back.classList.remove('hidden')
+    loading.classList.add('hidden')
 }
 
 const renderDetail = (data) => {
     console.log(data)
     let detail, directives
-    const slider = document.getElementById('slider')
+
     const detailContainer = document.getElementById('detail-container')
+
+    const loading = document.getElementById('loading-state')
     const sliderBack = document.getElementById('slider-back')
+
 
     detail = {
         path: data.coverimages[1],
@@ -69,15 +74,22 @@ const renderDetail = (data) => {
         }
     }
 
-    sliderBack.classList.add('hidden')
-    slider.classList.add('hidden')
+
     detailContainer.classList.remove('hidden')
     Transparency.render(document.getElementById('detail-container'), detail, directives)
+    loading.classList.add('hidden')
+    sliderBack.classList.add('hidden')
+}
 
-
+const renderLoading = () => {
+    const loading = document.getElementById('loading-state')
+    const categories = document.getElementById('categories')
+    categories.classList.add('hidden')
+    loading.classList.remove('hidden')
 }
 
 export {
     renderOverview,
-    renderDetail
+    renderDetail,
+    renderLoading
 }
