@@ -1,7 +1,7 @@
 # OBA Cultural Center
 ![Image of preview](./course/prototype_screenshot.png)
 
-OBA Cultural Center is a tool that helps students with picking a subject for their project/essay.
+OBA Cultural Center is a tool that helps students with picking a subject for their project/essay in an interactive way.
 
 ## Live Link
 [Demo](https://mich97.github.io/project-1-1920/)
